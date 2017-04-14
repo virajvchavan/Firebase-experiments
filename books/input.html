@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insert Books</title>
+	<link rel="stylesheet" type="text/css" href="input.css">
+</head>
+<body>
+<form id="insert_books">
+	Book Name: <input type="text" id="book_name">
+	<input type="submit" id="submit">
+</form>
+
+<br><hr>
+<h1>The Books</h1>
+<ol id="the_list">
+	
+</ol>
+
+<script src="https://www.gstatic.com/firebasejs/3.7.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAZVilsUxrVPkbpASPz4eflDTV4g0in650",
+    authDomain: "books-87502.firebaseapp.com",
+    databaseURL: "https://books-87502.firebaseio.com",
+    projectId: "books-87502",
+    storageBucket: "books-87502.appspot.com",
+    messagingSenderId: "881056099"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="input.js"></script>
+</body>
+</html>
